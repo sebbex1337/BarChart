@@ -2,7 +2,7 @@
 
 window.addEventListener("load", initApp);
 
-const queueArray = [];
+const queueArray = Array(40);
 
 function initApp() {
     document.querySelector(".chart").addEventListener("animationiteration", barChart);
@@ -26,6 +26,6 @@ function displayQueue() {
         const num = queueArray[i];
         const chart = document.querySelectorAll(".chart")[i];
 
-        chart.style.height = num + "px";
+        chart.style.height = num + "vh";
     }
 }
