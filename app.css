@@ -1,0 +1,29 @@
+#charts {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chart {
+    background-color: greenyellow;
+    border: 1px solid black;
+    height: 100%;
+    margin: 1px;
+    flex-grow: 1;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+body {
+    margin: 3em;
+}
