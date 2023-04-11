@@ -5,6 +5,7 @@ window.addEventListener("load", initApp);
 const queueArray = Array(40);
 
 function initApp() {
+    barChart();
     document.querySelector(".chart").addEventListener("animationiteration", barChart);
 }
 
